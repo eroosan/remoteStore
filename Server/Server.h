@@ -36,7 +36,6 @@ public:
 private:
 	unique_ptr<ServerHandler> pServerHandler;
 	mutex lock;
-	condition_variable condVar;
 	unique_ptr<TSimpleServer> pServer;
 };
 
